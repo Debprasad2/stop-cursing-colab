@@ -26,7 +26,7 @@ KeepAlive(ColabWinTitle, Interval){
 	
 
 InputBox, ColabFileName, Colab Keep Alive Script, Enter the Google Colab filename
-ColabWinTitle := ColabFileName . " - Colaboratory - Google Chrome"
+ColabWinTitle := ColabFileName . " - Colab - Google Chrome"
 if WinExist(ColabWinTitle){
 	WinActivate
 	InputBox, Interval, Keep Alive : %ColabWinTitle%, Enter an interval (in minutes) to emulate mouse and keyboard behaviour :
